@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-common-page',
@@ -47,4 +48,13 @@ export class CommonPageComponent {
     age: 36,
     address: 'Ottawa, Canada',
   };
+
+  //asyncPipe
+  myObservableTimer = interval(2000); //emite valores cada 2 segundos
+
+  public promiseValue: Promise<string> = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Tenemos data en la promesa.');
+    }, 3500);
+  });
 }

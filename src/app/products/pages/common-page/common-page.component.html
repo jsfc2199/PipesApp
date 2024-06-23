@@ -39,7 +39,7 @@
     <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
       <!-- es como hacer un ng for y hace una pareja de clave valor-->
        <ul>
-        <li *ngFor="let item of person | keyvalue"> 
+        <li *ngFor="let item of person | keyvalue">
           <b>{{item.key | titlecase}}: </b>{{item.value}}
         </li>
 
@@ -48,6 +48,14 @@
   </div>
 
   <div class="col-12 md:col-6">
-    <p-fieldset legend="Async Pipe" [toggleable]="true"> </p-fieldset>
+    <p-fieldset legend="Async Pipe" [toggleable]="true">
+      <!-- sirve para promesas y observables. Más para observables -->
+       <!-- hace la desuscripción automáticamente -->
+        <pre *ngIf="!(myObservableTimer | async)"> Resolviendo Observable</pre>
+       <pre>{{myObservableTimer | async}}</pre>
+
+       <pre *ngIf="!(promiseValue | async)"> Resolviendo promesa</pre>
+       <pre>{{promiseValue | async}}</pre><!--  no es posible cancelar la promesa con async -->
+    </p-fieldset>
   </div>
 </div>
