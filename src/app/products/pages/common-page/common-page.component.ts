@@ -31,13 +31,20 @@ export class CommonPageComponent {
     'Natalia',
   ];
 
-  deleteClient(){
-    this.clients.shift()
+  deleteClient() {
+    this.clients.shift();
   }
 
   clientsMap = {
     '=0': 'no tenemos ningún cliente esperando',
     '=1': 'tenemos un cliente esperando',
-    'other': 'tenemos # clientes esperando'
-  }
+    other: 'tenemos # clientes esperando',
+  };
+
+  //keyvalue pipe
+  public person = {
+    name: 'Fernando',
+    age: 36,
+    address: 'Ottawa, Canada',
+  };
 }
