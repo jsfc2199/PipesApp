@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrl: './common-page.component.css'
 })
 export class CommonPageComponent {
+  //i18n Select
+  public name: string = 'Fernando';
+  public gender: 'male' | 'female' = 'male';
 
+  invitationMap = {
+    'male':'invitarlo',
+    'female': 'invitarla'
+  }
+
+  changeClient(){
+    this.name = 'Mellisa'
+    this.gender = 'female'
+  }
 }
