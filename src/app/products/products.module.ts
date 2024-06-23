@@ -7,6 +7,7 @@ import { NumbersPageComponent } from './pages/numbers-page/numbers-page.componen
 import { CommonPageComponent } from './pages/common-page/common-page.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrderComponent } from './pages/order/order.component';
+import { ToggleCasePipe } from './pipes/togglecase.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,9 @@ import { OrderComponent } from './pages/order/order.component';
     NumbersPageComponent,
     CommonPageComponent,
     OrderComponent,
+
+    //Pipes
+    ToggleCasePipe,
   ],
   imports: [CommonModule, ProductsRoutingModule, PrimeNgModule],
 })

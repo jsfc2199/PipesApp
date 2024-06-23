@@ -1,3 +1,33 @@
 <p-panel header="Pipes Personalizados" class="p-2">
-  <p>Pipes personalizados en Angular/p>
+  <p>
+    Pipes personalizados en Angular - Creado por
+    {{ "nosotros" | toggleCase : true }}
+  </p>
 </p-panel>
+
+<p-toolbar>
+  <div class="p-toolbar-group-start">
+    <p-button label="ToggleCase" icon="pi pi-search"></p-button>
+  </div>
+
+  <div class="p-toolbar-group-end">
+  <p-button
+    class="mr-2"
+    label="Por Nombre"
+    icon="pi pi-sort"
+    styleClass="p-button-success"
+  ></p-button>
+  <p-button
+    class="mr-2"
+    label="Vuela"
+    icon="pi pi-sort"
+    styleClass="p-button-danger"
+  ></p-button>
+  <p-button
+    class="mr-2"
+    label="Color"
+    icon="pi pi-sort"
+    styleClass="p-button-help"
+  ></p-button>
+</div>
+</p-toolbar>
