@@ -20,12 +20,15 @@
         <li>Fecha | Date:Long</li>
         <li>Fecha | Date:'MMMM'</li>
         <li>Fecha | Date:'MMMM dd,yyyy'</li>
+
       </ol>
 
       <hr />
       <ol>
         <li>Fecha | Date:'long':'GMT-6'</li>
         <li>Fecha | Date:'long':'GMT-4'</li>
+        <li>Fecha | Date:'long':'':'es-COL'</li>
+
       </ol>
     </p-card>
   </div>
@@ -38,11 +41,14 @@
         <li>{{ customDate | date : "long" }}</li>
         <li>{{ customDate | date : "MMMM" }}</li>
         <li>{{ customDate | date : "MMMM dd, yyyy" }}</li>
+        <li>{{ customDate | date : "MMMM dd, yyyy" }}</li>
       </ol>
       <hr />
       <ol>
         <li>{{ customDate | date : "long" : "GMT-6" }}</li>
         <li>{{ customDate | date : "long" : "GMT-4" }}</li>
+        <li>{{customDate | date:'long':'':'es-CO'}}</li>
+
       </ol>
     </p-card>
   </div>
